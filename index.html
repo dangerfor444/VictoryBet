@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VictoryBet</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>VictoryBet</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>    
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Взгляд в будущее - здесь и сейчас</h1>
+    <h3>Играй с уверенностью - мы знаем своё дело!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span>Добро пожаловать в мир азарта и возможностей!</span>
+    </div>
+    <div class="text">
+      <span>Наша букмекерская организация - это не просто место для делания ставок на киберспортивные события, у нас вы найдете необычные и эксклюзивные возможности для заработка.</span>     
+      <span>Но что делает нас по-настоящему особенными? Это дух соревнований и настоящее увлечение, которое мы делим со своими игроками. Мы создали настоящее сообщество людей, которые любят азарт и живут им. У нас вы найдете активные форумы, где можно обсуждать свои победы и поражения, делиться опытом и находить новых друзей.</span>
+      <span>Выбирайте лучшее и окунайтесь в мир азарта с нашей букмекерской организацией. С нами вы получите не только возможность заработка, но и незабываемые впечатления и эмоции!</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Вы в надёжных руках</h2>
+    <h4>наши лучшие каперы</h4>
+
+    <div class="img">
+      <img src="https://sun9-32.userapi.com/impg/4RbVy0JheCa6HVVTCMSHwqpCsrZwF4XjgyszKw/GkGcg5gRzBQ.jpg?size=798x447&quality=95&sign=ef45baf54d94027e440b565afcdb2aba&type=album" alt="">
+      <span>аналитик Дмитрий Харитоненко 200 mmr</span>
+    </div>
+    <div class="img">
+      <img src="https://sun9-15.userapi.com/impg/Bov3Qg7msFFOJ6ZNvGs-10bK8wG0Dd5UnRoyBw/GdaOZl8XOE8.jpg?size=594x448&quality=95&sign=8fa76547813c728f612c76460b7274ce&type=album" alt="">
+      <span>Профессиональный аналитик Дмитрий Лысяков 6000mmr</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Присоединяйся к нам</h5>
+        <a href="https://t.me/+pcWIsgUsEjozOWNi">Telegram</a>
+    </center>
+
+    </form>
+  </div>
+
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
